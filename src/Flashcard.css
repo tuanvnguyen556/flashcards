@@ -1,5 +1,12 @@
 .container{
-    background-color: red;
+    background-color: white;
     width: 500px;
     height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 2rem;
 }

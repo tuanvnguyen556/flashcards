@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import './Flashcard.css'
-const Flashcard = (props) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+const Flashcard = ({isFlipped, setIsFlipped, front, back}) => {
 
-  const handleClick = () => setIsFlipped(!isFlipped);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  }
+
   return (<>
     <div onClick={handleClick} className="container">
-        <p>{isFlipped ? (props.back) : (props.front)}</p>
+        <p>{isFlipped ? (back) : (front)}</p>
     </div>
   </>)
 };
