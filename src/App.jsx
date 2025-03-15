@@ -20,9 +20,9 @@ const App = () => {
   const submitGuess = () => {
     const playerNameArray = flashCards[count].answer.toLowerCase().split(" ");
     let validAnswer = false;
-
+    console.log(playerNameArray);
     for (let i =0; i < playerNameArray.length; i++){
-      if (playerNameArray[i] === answer){
+      if (playerNameArray[i] === answer.toLocaleLowerCase()){
         validAnswer = true;
       }
     }
