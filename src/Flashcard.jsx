@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Flashcard.css'
-const Flashcard = ({isFlipped, setIsFlipped, front, back}) => {
+const Flashcard = ({isFlipped, setIsFlipped, front, back, cardColor}) => {
 
 
   const handleClick = () => {
@@ -8,7 +8,7 @@ const Flashcard = ({isFlipped, setIsFlipped, front, back}) => {
   }
 
   return (<>
-    <div onClick={handleClick} className="container">
+    <div onClick={handleClick} className={"container " + cardColor}>
         <p>{isFlipped ? (back) : (front)}</p>
     </div>
   </>)

@@ -5,6 +5,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.default-card{
+    background-color: white;
+}
+
+.green-card{
+    background-color: rgb(149, 213, 149);
+}
+
+.red-card{
+    background-color: rgb(255, 157, 157);
 }
 
 p{
